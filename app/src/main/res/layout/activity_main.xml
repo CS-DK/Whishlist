@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/websiteTv"
+        android:layout_width="223dp"
+        android:layout_height="46dp"
+        android:hint="https://www.example.com/"
+        android:textColorHint="#808080"
+        android:textColor="#C80000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submitBtn"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTv" />
+
+    <EditText
+        android:id="@+id/priceTv"
+        android:layout_width="101dp"
+        android:layout_height="54dp"
+        android:hint="ex: 9.99"
+        android:textColorHint="#808080"
+        android:textColor="#C80000"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toEndOf="@+id/nameTv"
+        app:layout_constraintTop_toBottomOf="@+id/wishlistRv"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <EditText
+        android:id="@+id/nameTv"
+        android:layout_width="102dp"
+        android:layout_height="59dp"
+        android:hint="Item Name"
+        android:textColorHint="#808080"
+        android:textColor="#C80000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wishlistRv"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Submit"
+        android:backgroundTint="#C80000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceTv"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wishlistRv"
+        android:layout_width="413dp"
+        android:layout_height="475dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
